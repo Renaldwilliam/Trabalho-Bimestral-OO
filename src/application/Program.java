@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import entities.Colegiado;
 import entities.Curso;
 import entities.Disciplina;
 import entities.Estudante;
@@ -45,6 +46,12 @@ public class Program {
 		Estudante estu = new Estudante("Marcos", "5896", y1, "45865", 3, c1);
 		System.out.println(estu);
 		
+		
+		Colegiado col1 = new Colegiado(c1);
+		
+		col1.inseriProfessor(p2);
+		
+		System.out.println(col1);
 		
 	}
 
