@@ -7,6 +7,7 @@ import java.util.Locale;
 
 import entities.Curso;
 import entities.Disciplina;
+import entities.Estudante;
 import entities.Pessoa;
 import entities.Professor;
 
@@ -40,6 +41,11 @@ public class Program {
 		//c1.removeDisciplina(d1);
 		
 		//System.out.println(c1);
+		
+		Estudante estu = new Estudante("Marcos", "5896", y1, "45865", 3, c1);
+		System.out.println(estu);
+		
+		
 	}
 
 }
