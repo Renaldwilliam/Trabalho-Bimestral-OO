@@ -5,6 +5,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import entities.AlunosCurso;
+import entities.Aula;
 import entities.Colegiado;
 import entities.Curso;
 import entities.Disciplina;
@@ -44,6 +46,7 @@ public class Program {
 		//System.out.println(c1);
 		
 		Estudante estu = new Estudante("Marcos", "5896", y1, "45865", 3, c1);
+		Estudante estu2 = new Estudante("Marcos1", "58296", y1, "445865", 3, c1);
 		System.out.println(estu);
 		
 		
@@ -52,6 +55,21 @@ public class Program {
 		col1.inseriProfessor(p2);
 		
 		System.out.println(col1);
+		
+		AlunosCurso ac = new AlunosCurso(c1);
+		
+		ac.insereAluno(estu);
+		
+		System.out.println("Alunoscurso");
+		System.out.println(ac.getAlunosCurso());
+		
+		Aula aul = new Aula("25", y1, d2);
+		
+		aul.insereAluno(estu);
+		aul.insereAluno(estu2);
+		System.out.println(aul.recuperaAluno(estu.getRa()));
+		
+		System.out.println(aul.getAlunosAula());
 		
 	}
 
