@@ -38,6 +38,7 @@ public class MenuPrincipal {
         System.out.println("10 - Cadastrar uma Aula");
         System.out.println("11 - Cadastar Aluno em uma Aula");
         System.out.println("12 - Cadastrar Disciplina em uma Aula");
+<<<<<<< HEAD
         System.out.println("13 - Listagem dos alunos do curso");
         System.out.println("14 - Listagem das disciplinas do curso");
         System.out.println("15 - Listagem do colegiado do curso");
@@ -104,6 +105,10 @@ public class MenuPrincipal {
     
  }
     
+=======
+    }
+    
+>>>>>>> ea68548583c6f79d5e988edec5694da0475bb999
     public void cadastrarCurso(String nome) {
         Curso curso = new Curso();
         curso.setNomeCurso(nome);
@@ -253,7 +258,11 @@ public class MenuPrincipal {
                 for (int i = 0; i < alunosCursos.size(); i++) {
                     System.out.println(i + " - " + alunosCursos.get(i).getCurso().getNomeCurso());
                 }
+<<<<<<< HEAD
                 System.out.print("Digite um número correspondete ao curso: ");
+=======
+                System.out.print("Digite um nÃºmero correspondete ao curso: ");
+>>>>>>> ea68548583c6f79d5e988edec5694da0475bb999
                 Integer cursoSelecionado = Integer.parseInt(scanner.nextLine());
                 System.out.println("Estudantes cadastrados!");
                 for (int i = 0; i < estudantesCadastrados.size(); i++) {
@@ -298,7 +307,11 @@ public class MenuPrincipal {
                 for (int i = 0; i < aulasCadastradas.size(); i++) {
                     System.out.println(i + " - " + aulasCadastradas.get(i).getLab());
                 }
+<<<<<<< HEAD
                 System.out.print("Digite o número correspondente ao laboratório: ");
+=======
+                System.out.print("Digite o nÃºmero correspondente ao laboratÃ³rio: ");
+>>>>>>> ea68548583c6f79d5e988edec5694da0475bb999
                 Integer labSelecionado = Integer.parseInt(scanner.nextLine());
                 System.out.print("Digite o RA do aluno que deseja cadastrar na aula: ");
                 String alunoRaSelecionado = scanner.nextLine();
@@ -319,10 +332,17 @@ public class MenuPrincipal {
             for (int i = 0; i < cursosCadastrados.size(); i++) {
                 System.out.println(i + " - " + cursosCadastrados.get(i).getNomeCurso());
             }
+<<<<<<< HEAD
             System.out.print("Digite um número correspondente ao curso: ");
             Integer cursoSelecionado = Integer.parseInt(scanner.nextLine());
             if (cursosCadastrados.get(cursoSelecionado).getDisciplina().isEmpty()) {
                 System.out.println("Esse curso não têm disciplinas cadastradas!");
+=======
+            System.out.print("Digite um nÃºmero correspondente ao curso: ");
+            Integer cursoSelecionado = Integer.parseInt(scanner.nextLine());
+            if (cursosCadastrados.get(cursoSelecionado).getDisciplina().isEmpty()) {
+                System.out.println("Esse curso nÃ£o tÃªm disciplinas cadastradas!");
+>>>>>>> ea68548583c6f79d5e988edec5694da0475bb999
             } else {
                 System.out.println("Disciplinas cadastradas!");
                 System.out.println(cursosCadastrados.get(cursoSelecionado).getDisciplina());
@@ -330,7 +350,11 @@ public class MenuPrincipal {
                 for (int i = 0; i < aulasCadastradas.size(); i++) {
                     System.out.println(i + " - " + aulasCadastradas.get(i).getLab());
                 }
+<<<<<<< HEAD
                 System.out.print("Digite o número correspondente ao laboratório: ");
+=======
+                System.out.print("Digite o nÃºmero correspondente ao laboratÃ³rio: ");
+>>>>>>> ea68548583c6f79d5e988edec5694da0475bb999
                 Integer aulaSelecionada = Integer.parseInt(scanner.nextLine());
                 System.out.print("Digite o nome da disciplina que deseja cadastrar na aula: ");
                 String nomeDisciplina = scanner.nextLine();
@@ -348,7 +372,11 @@ public class MenuPrincipal {
                 if (encontrou) {
                     System.out.println("Disciplina cadastrada com sucesso!");
                 } else {
+<<<<<<< HEAD
                     System.out.println("Disciplina não encontrada!");
+=======
+                    System.out.println("Disciplina nÃ£o encontrada!");
+>>>>>>> ea68548583c6f79d5e988edec5694da0475bb999
                 }
                 System.out.println(aulasCadastradas.get(aulaSelecionada).getDisc());
             }
@@ -360,7 +388,11 @@ public class MenuPrincipal {
             Scanner scanner = new Scanner(System.in);
             SimpleDateFormat dataFormato = new SimpleDateFormat("dd/MM/yyyy");
             imprimirMenu();
+<<<<<<< HEAD
             System.out.print("Escolha a opção desejada: ");
+=======
+            System.out.print("Escolha a opÃ§Ã£o desejada: ");
+>>>>>>> ea68548583c6f79d5e988edec5694da0475bb999
             String decisao = scanner.nextLine();
             if (decisao.equals("1")) {
                 System.out.print("Digite o nome do curso: ");
@@ -385,7 +417,11 @@ public class MenuPrincipal {
                     for (int i = 0; i < cursosCadastrados.size(); i++) {
                         System.out.println(i + " - " + cursosCadastrados.get(i).getNomeCurso());
                     }
+<<<<<<< HEAD
                     System.out.print("Digite o número correspondente ao curso: ");
+=======
+                    System.out.print("Digite o nÃºmero correspondente ao curso: ");
+>>>>>>> ea68548583c6f79d5e988edec5694da0475bb999
                     Integer cursoSelecionado = Integer.parseInt(scanner.nextLine());
                     cadastrarEstudante(nome, cpf, dataFormatada, ra, periodo,
                             cursosCadastrados.get(cursoSelecionado));
@@ -400,7 +436,11 @@ public class MenuPrincipal {
                 Date dataFormatada = dataFormato.parse(data);
                 System.out.print("Digite o registro: ");
                 String registro = scanner.nextLine();
+<<<<<<< HEAD
                 System.out.print("Digite a titulação: ");
+=======
+                System.out.print("Digite a titulaÃ§Ã£o: ");
+>>>>>>> ea68548583c6f79d5e988edec5694da0475bb999
                 String titulacao = scanner.nextLine();
                 System.out.print("Digite as horas semanais: ");
                 Double horasSemanais = Double.parseDouble(scanner.nextLine());
@@ -425,7 +465,11 @@ public class MenuPrincipal {
             } else if (decisao.equals("9")) {
                 cadastarAlunosCursoTurma();
             } else if (decisao.equals("10")) {
+<<<<<<< HEAD
                 System.out.print("Digite o nome do laboratório: ");
+=======
+                System.out.print("Digite o nome do laboratÃ³rio: ");
+>>>>>>> ea68548583c6f79d5e988edec5694da0475bb999
                 String nome = scanner.nextLine();
                 SimpleDateFormat dataFormatada = new SimpleDateFormat("dd/MM/yyyy HH:mm");
                 System.out.print("Digite a data e a hora: ");
@@ -436,6 +480,7 @@ public class MenuPrincipal {
                 cadastrarAlunoAula();
             } else if (decisao.equals("12")) {
                 cadastrarDisciplinaAula();
+<<<<<<< HEAD
             } else if (decisao.equals("13")) {
             	listaAlunoCurso();
             }else if (decisao.equals("14")) {
@@ -448,3 +493,9 @@ public class MenuPrincipal {
         }
     }
 }
+=======
+            }
+        }
+    }
+}
+>>>>>>> ea68548583c6f79d5e988edec5694da0475bb999
