@@ -42,11 +42,9 @@ public class Estudante extends Pessoa {
 		this.curso = curso;
 	}
 
-	@Override
+	
 	public String toString() {
-		return "Estudante nome: " + super.getNome() + "\n"
-			    +"Periodo: " + this.periodo + "\n"
-			    +"Curso: " + this.getCurso().getNomeCurso();
+		return "Estudante nome: " + super.getNome() + " Periodo: " + this.periodo  + " Curso: " + this.getCurso().getNomeCurso();
 	}
 	
 	

@@ -55,6 +55,12 @@ public class Aula {
 	public void insereAluno(Estudante aluno) {
 		alunosAula.put(aluno.getRa(),aluno);
 	}
+
+	@Override
+	public String toString() {
+		return "Aula [lab=" + lab + ", dataHora=" + dataHora + ", disc=" + disc + ", alunosAula=" + alunosAula + "]";
+	}
 	
-}
+	
+}	
 

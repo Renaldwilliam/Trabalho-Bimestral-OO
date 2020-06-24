@@ -25,7 +25,7 @@ public class AlunosCurso {
 	}
 
 	public Map<String, Estudante> getAlunosCurso() {
-		return alunosCurso;
+		return  alunosCurso;
 	}
 
 	
@@ -33,8 +33,8 @@ public class AlunosCurso {
 		alunosCurso.put(estu.getRa(), estu);
 	}
 	
-	public String recuperaAluno(String ra) {
-		return alunosCurso.get(ra).getNome();
+	public Estudante recuperaAluno(String ra) {
+		return alunosCurso.get(ra);
 	}
 	
 }
