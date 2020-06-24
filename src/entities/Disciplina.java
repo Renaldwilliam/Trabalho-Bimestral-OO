@@ -1,5 +1,10 @@
 package entities;
 
+/**
+ * 
+ * @author renald
+ *
+ */
 public class Disciplina {
 
 	private String nome;

@@ -3,6 +3,11 @@ package entities;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ * @author renald
+ *
+ */
 public class Curso {
 	
 	private String nomeCurso;

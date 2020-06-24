@@ -6,6 +6,11 @@ import java.util.Date;
 import java.util.Map;
 import java.util.TreeMap;
 
+/**
+ * 
+ * @author renald
+ *
+ */
 public class Aula {
 
 	private String lab;

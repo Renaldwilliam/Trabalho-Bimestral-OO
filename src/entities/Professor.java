@@ -2,6 +2,11 @@ package entities;
 
 import java.util.Date;
 
+/**
+ * 
+ * @author renald
+ *
+ */
 public class Professor extends Pessoa{
 
 	private String nRegistro;

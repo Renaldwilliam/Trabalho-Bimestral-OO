@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author daniel
+ * @author daniel e Renald e Marcos
  */
 public class MenuPrincipal {
     
